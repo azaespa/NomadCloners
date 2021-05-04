@@ -1,43 +1,3 @@
-html {
-	font-size: 16px;
-}
-
-header nav {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-}
-
-.navLogo {
-	width: 2.5em;
-}
-
-button {
-	display: flex;
-	background: transparent;
-	border-color: transparent;
-	justify-content: center;
-	align-items: center;
-}
-
-.profileBtn {
-	width: 2.5em;
-	height: 2.5em;
-	border-radius: 1.25em;
-	overflow: hidden;
-}
-
-.profileBtn > * {
-	width: inherit;
-	height: inherit;
-}
-
-.notifBtn {
-	box-sizing: border-box;
-	width: 3em;
-	height: 3em;
-}
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -86,3 +46,113 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* NOMAD CLONERS STYLE */
+
+html {
+	font-size: 14px;
+	font-family: 'Inter', sans-serif;
+	color: rgba(107, 114, 128);
+}
+
+header nav {
+	display: flex;
+	justify-content: center;
+	box-shadow: 0 1px 3px rgba(85, 85, 85, 0.20);
+}
+
+header nav .navDiv {
+	display: flex;
+	flex-direction: row;
+	width: 90%;
+	height: 4.5em;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+header nav .navMenu{
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+header nav .navMenu > a:not(:first-child) {
+	padding-left: 2em;
+}
+
+.navLogo {
+	display: flex;
+	align-items: center;
+	width: 2.8em;
+}
+
+a {
+	text-decoration: none;
+	line-height: 5em;
+	color: inherit;
+}
+
+@keyframes defaultColor {
+	from {
+		color: rgb(53, 57, 63);
+	}
+	to {
+		color: rgba(107, 114, 128);
+	}
+}
+
+@keyframes hoverColor {
+	from {
+		color: rgba(107, 114, 128);
+	}
+	to {
+		color: rgb(53, 57, 63);
+	}
+}
+
+a:hover {
+	animation: hoverColor .15s ease-in forwards;
+}
+
+a:not(:hover) {
+	animation: defaultColor .15s ease-in;
+}
+
+header nav .navUser {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: auto;
+}
+
+button {
+	background: transparent;
+	border-color: transparent;
+	cursor: pointer;
+}
+
+.profileBtn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 2.8em;
+	height: 2.8em;
+	border-radius: 1.4em;
+	overflow: hidden;
+}
+
+.profileBtn > * {
+	width: inherit;
+	height: inherit;
+}
+
+.notifBtn {
+	box-sizing: border-box;
+	width: 3em;
+	height: 3em;
+	color: inherit;
+}
+
+
+
+
