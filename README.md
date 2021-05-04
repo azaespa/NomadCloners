@@ -1,4 +1,4 @@
 # NomadCloners
 Nomad Coders Clone
 
-[View HTML&CSS version here](https://pjazanes.github.io/NomadCloners/)
+<a href="https://pjazanes.github.io/NomadCloners/" target="_blank">View HTML&CSS version here</a>
