@@ -271,6 +271,29 @@ button {
 	border-radius: 10px;
 }
 
+.indexCourse .indexCourseBanner span {
+	position: absolute;
+	top: .75em;
+	left: .75em;
+	text-align: center;
+	width: 6ch;
+	line-height: 1.75em;
+	color: rgba(6, 95, 70);
+	border-radius: 10px;
+}
+
+.indexCourse .indexCourseBanner .beginnerClass {
+	background-color: rgba(209, 250, 229);
+}
+
+.indexCourse .indexCourseBanner .middleClass {
+	background-color: rgba(254, 249, 195);
+}
+
+.indexCourse .indexCourseBanner .advancedClass {
+	background-color: rgba(219, 234, 254);
+}
+
 .indexCourse .indexCourseBanner img {
 	width: inherit;
 	height: inherit;
@@ -317,13 +340,13 @@ button {
 .indexCourse:hover .indexCourseBanner img {
 	width: 416.533px;
 	height: 234.3px;
-	transition: width .30s, height .30s;
+	transition: width .25s, height .25s;
 }
 
 .indexCourse:not(:hover) .indexCourseBanner img {
 	width: inherit;
 	height: inherit;
-	transition: width .30s, height .30s;
+	transition: width .25s, height .25s;
 }
 
 .indexCourse:hover .indexCourseTitle {
