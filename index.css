@@ -92,7 +92,7 @@ a {
 	color: inherit;
 }
 
-@keyframes defaultColor {
+@keyframes navDefaultColor {
 	from {
 		color: rgb(53, 57, 63);
 	}
@@ -101,7 +101,7 @@ a {
 	}
 }
 
-@keyframes hoverColor {
+@keyframes navHoverColor {
 	from {
 		color: rgba(107, 114, 128);
 	}
@@ -111,11 +111,11 @@ a {
 }
 
 a:hover {
-	animation: hoverColor .15s ease-in forwards;
+	animation: navHoverColor .15s ease-in forwards;
 }
 
 a:not(:hover) {
-	animation: defaultColor .15s ease-in;
+	animation: navDefaultColor .15s ease-in;
 }
 
 header nav .navUser {
@@ -202,6 +202,32 @@ button {
 	width: 250px;
 	height: 3em;
 	border-radius: 5px;
+}
+
+@keyframes btnDefaultColor {
+	from {
+		background-color: rgb(80, 135, 253);
+	}
+	to {
+		background-color: rgb(37, 99, 235);
+	}
+}
+
+@keyframes btnHoverColor {
+	from {
+		background-color: rgb(37, 99, 235);
+	}
+	to {
+		background-color: rgb(80, 135, 253);
+	}
+}
+
+button:hover{
+	animation: btnHoverColor .15s ease-in forwards;
+}
+
+button:not(:hover){
+	animation: btnDefaultColor .15s ease-in;
 }
 
 
