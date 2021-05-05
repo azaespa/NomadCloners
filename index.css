@@ -153,6 +153,55 @@ button {
 	color: inherit;
 }
 
+.indexContent {
+	display: flex;
+	justify-content: center;
+}
 
+.indexContent .indexBanner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1.5em;
+	width: 90%;
+}
+
+.indexBanner .indexBannerTitle {
+	padding-top: 1em;
+	text-align: center;
+	font-size: 4.5em;
+	font-weight: 600;
+	letter-spacing: -1.6px;
+}
+
+.indexBanner .indexBannerTitle > h2{
+	color: black;
+}
+
+.indexBanner .indexBannerTitle > span{
+	color: rgb(37, 99, 235);
+}
+
+.indexBanner .indexBannerDescription {
+	text-align: center;
+	font-size: 1.5em;
+	line-height: 1.5em;
+}
+
+.indexBanner .indexBannerButton {
+	padding-top: 1.5em;
+}
+
+.indexBanner .indexBannerButton button{
+	background-color: rgb(37, 99, 235);
+	color: white;
+	font-family: inherit;
+	font-size: 1.25em;
+	line-height: 1.5em;
+	width: 250px;
+	height: 3em;
+	border-radius: 5px;
+}
 
 
