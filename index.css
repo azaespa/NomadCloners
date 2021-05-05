@@ -55,6 +55,12 @@ html {
 	color: rgba(107, 114, 128);
 }
 
+header {
+	position: sticky;
+	top: 0;
+	background-color: rgba(255,255,255,0.8);
+}
+
 header nav {
 	display: flex;
 	justify-content: center;
@@ -80,13 +86,13 @@ header nav .navMenu > a:not(:first-child) {
 	padding-left: 2em;
 }
 
-.navLogo {
+header nav .navLogo {
 	display: flex;
 	align-items: center;
 	width: 2.8em;
 }
 
-a {
+header nav .navMenu > a {
 	text-decoration: none;
 	line-height: 5em;
 	color: inherit;
@@ -155,20 +161,26 @@ button {
 
 .indexContent {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 }
 
-.indexContent .indexBanner {
+.indexContent .indexBanner,
+.indexContent .indexCourses {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 1.5em;
 	width: 90%;
 }
 
+.indexContent .indexBanner {
+	gap: 1.5em;
+}
+
 .indexBanner .indexBannerTitle {
-	padding-top: 1em;
+	padding-top: 2em;
 	text-align: center;
 	font-size: 4.5em;
 	font-weight: 600;
@@ -222,12 +234,24 @@ button {
 	}
 }
 
-button:hover{
+.indexBanner .indexBannerButton button:hover{
 	animation: btnHoverColor .15s ease-in forwards;
 }
 
-button:not(:hover){
+.indexBanner .indexBannerButton button:not(:hover){
 	animation: btnDefaultColor .15s ease-in;
 }
 
+.indexContent .indexCourses {
+	margin-top: 8em;
+	display: flex;
+	flex-flow: row wrap;
+	gap: 2.5em;
+}
 
+.indexCourse .indexCourseBanner img {
+	width: 378.667px;
+	height: 213px;
+	overflow: hidden;
+	border-radius: 10px;
+}
