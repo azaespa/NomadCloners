@@ -254,23 +254,31 @@ button {
 	position: relative;
 	display: flex;
 	justify-content: center;
-	height: 283px;
+	height: 297px;
 }
 
 .indexCourses .indexCourse:hover {
 	cursor: pointer;
 }
 
-.indexCourse .indexCourseBanner img {
+.indexCourse .indexCourseBanner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 378.667px;
 	height: 213px;
 	overflow: hidden;
 	border-radius: 10px;
 }
 
+.indexCourse .indexCourseBanner img {
+	width: inherit;
+	height: inherit;
+}
+
 .indexCourse .indexCourseTitle {
 	position: absolute;
-	bottom: 2em;
+	bottom: 3em;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -280,8 +288,12 @@ button {
 	line-height: 2.5em;
 	background: white;
 	color: black;
-	border: 1px black solid;
 	border-radius: 10px;
+}
+
+.indexCourseBanner,
+.indexCourseTitle {
+	box-shadow: 0 10px 10px rgb(80, 80, 80, .15);
 }
 
 .indexCourse .indexCourseTitle h3 {
@@ -290,4 +302,36 @@ button {
 
 .indexCourse .indexCourseTitle h4 {
 	font-size: 1.15em;
+}
+
+.indexCourse:hover .indexCourseBanner {
+	transform: translateY(-4px);
+	transition: transform .30s;
+}
+
+.indexCourse:not(:hover) .indexCourseBanner {
+	transform: translateY(0px);
+	transition: transform .30s;
+}
+
+.indexCourse:hover .indexCourseBanner img {
+	width: 416.533px;
+	height: 234.3px;
+	transition: width .30s, height .30s;
+}
+
+.indexCourse:not(:hover) .indexCourseBanner img {
+	width: inherit;
+	height: inherit;
+	transition: width .30s, height .30s;
+}
+
+.indexCourse:hover .indexCourseTitle {
+	transform: translateY(-8px);
+	transition: transform .25s;
+}
+
+.indexCourse:not(:hover) .indexCourseTitle {
+	transform: translateY(0px);
+	transition: transform .25s;
 }
