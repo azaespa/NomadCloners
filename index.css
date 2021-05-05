@@ -58,6 +58,7 @@ html {
 header {
 	position: sticky;
 	top: 0;
+	z-index: 1;
 	background-color: rgba(255,255,255,0.8);
 }
 
@@ -249,9 +250,44 @@ button {
 	gap: 2.5em;
 }
 
+.indexCourses .indexCourse {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	height: 283px;
+}
+
+.indexCourses .indexCourse:hover {
+	cursor: pointer;
+}
+
 .indexCourse .indexCourseBanner img {
 	width: 378.667px;
 	height: 213px;
 	overflow: hidden;
 	border-radius: 10px;
+}
+
+.indexCourse .indexCourseTitle {
+	position: absolute;
+	bottom: 2em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 350px;
+	height: 7em;
+	line-height: 2.5em;
+	background: white;
+	color: black;
+	border: 1px black solid;
+	border-radius: 10px;
+}
+
+.indexCourse .indexCourseTitle h3 {
+	font-size: 1.45em;
+}
+
+.indexCourse .indexCourseTitle h4 {
+	font-size: 1.15em;
 }
