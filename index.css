@@ -382,6 +382,7 @@ button {
 	background-color: rgb(249, 250, 251);
 	transform: skewY(-5deg);
 	width: 100%;
+	padding: 2em 0;
 }
 
 .indexContentChallenges .indexDiagonalBackground > * {
@@ -406,6 +407,6 @@ button {
 	color: black;
 }
 
-.indexChallenges .indexChallengesTitle h3 {
-	font-size: 1.25em;
+.indexChallenges .indexChallengesTitle span {
+	font-size: 1.5em;
 }
