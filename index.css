@@ -117,11 +117,11 @@ header nav .navMenu > a {
 	}
 }
 
-a:hover {
+header nav .navMenu > a:hover {
 	animation: navHoverColor .15s ease-in forwards;
 }
 
-a:not(:hover) {
+header nav .navMenu > a:not(:hover) {
 	animation: navDefaultColor .15s ease-in;
 }
 
@@ -357,4 +357,55 @@ button {
 .indexCourse:not(:hover) .indexCourseTitle {
 	transform: translateY(0px);
 	transition: transform .25s;
+}
+
+.indexContent .indexSeeAllCourses {
+	margin-top: 2em;
+}
+
+.indexContent .indexSeeAllCourses a {
+	font-size: 1.25em;
+	text-decoration: none;
+	color: rgb(37, 99, 235);
+}
+
+.indexContent .indexSeeAllCourses a:hover {
+	text-decoration: underline;
+}
+
+.indexContent .indexContentChallenges {
+	margin-top: 12em;
+	width: 100%;
+}
+
+.indexContentChallenges .indexDiagonalBackground {
+	background-color: rgb(249, 250, 251);
+	transform: skewY(-5deg);
+	width: 100%;
+}
+
+.indexContentChallenges .indexDiagonalBackground > * {
+	transform: skewY(5deg);
+}
+
+.indexDiagonalBackground .indexChallenges {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.indexChallenges .indexChallengesTitle {
+	text-align: center;
+}
+
+.indexChallenges .indexChallengesTitle h2 {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 2.5em;
+	line-height: 2.25em;
+	font-weight: 600;
+	color: black;
+}
+
+.indexChallenges .indexChallengesTitle h3 {
+	font-size: 1.25em;
 }
