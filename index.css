@@ -419,6 +419,7 @@ button {
 	align-items: center;
 	width: 90%;
 	margin-top: 5em;
+	gap: 2.5em;
 }
 
 .indexChallengesCards .indexChallengesCard {
@@ -433,7 +434,7 @@ button {
 	border-radius: 10px;
 }
 
-.indexChallengesCard .indexChallengesCardTitle h2 {
+.indexChallengesCard .indexChallengesCardTitle h3 {
 	font-size: 2.25em;
 	color: black;
 	line-height: 2.25em;
@@ -482,4 +483,46 @@ button {
 .indexChallengesCardUnlockBadge img {
 	height: 40px;
 	width: 40px;
+}
+
+.indexChallengesCards .indexChallengesCardCountdown {
+	margin-top: 1.5em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: .75em;
+	color: black;
+}
+
+.indexChallengesCardCountdown span{
+	font-size: 1em;
+}
+
+.indexChallengesCardCountdown h3{
+	font-size: 1.75em;
+	font-weight: 300;
+}
+
+.indexChallengesCards .indexChallengesCardSeeMore {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 3.5em;
+	width: 90%;
+	margin: 2em 0;
+}
+
+.indexChallengesCardSeeMore button{
+	box-sizing: border-box;
+	width: 100%;
+	height: inherit;
+	color: white;
+	font-size: 1.15em;
+	background-color: rgb(40, 44, 52);
+	border-radius: 5px;
+}
+
+.indexChallengesCardSeeMore button:hover{
+	background-color: rgb(calc(initial + 40), calc(initial + 40), calc(initial + 40));
 }
