@@ -3,526 +3,624 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* NOMAD CLONERS STYLE */
 
 html {
-	font-size: 14px;
-	font-family: 'Inter', sans-serif;
-	color: rgba(107, 114, 128);
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  color: rgba(107, 114, 128);
 }
 
 header {
-	position: sticky;
-	top: 0;
-	z-index: 1;
-	background-color: rgba(255,255,255,0.8);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 header nav {
-	display: flex;
-	justify-content: center;
-	box-shadow: 0 1px 3px rgba(85, 85, 85, 0.20);
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 1px 3px rgba(85, 85, 85, 0.2);
 }
 
 header nav .navDiv {
-	display: flex;
-	flex-direction: row;
-	width: 90%;
-	height: 4.5em;
-	align-items: center;
-	justify-content: flex-end;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 4.5em;
+  align-items: center;
+  justify-content: flex-end;
 }
 
-header nav .navMenu{
-	display: flex;
-	align-items: center;
-	height: 100%;
+header nav .navMenu {
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 header nav .navMenu > a:not(:first-child) {
-	padding-left: 2em;
+  padding-left: 2em;
 }
 
 header nav .navLogo {
-	display: flex;
-	align-items: center;
-	width: 2.8em;
+  display: flex;
+  align-items: center;
+  width: 2.8em;
 }
 
 header nav .navMenu > a {
-	text-decoration: none;
-	line-height: 5em;
-	color: inherit;
+  text-decoration: none;
+  line-height: 5em;
+  color: inherit;
 }
 
 @keyframes navDefaultColor {
-	from {
-		color: rgb(53, 57, 63);
-	}
-	to {
-		color: rgba(107, 114, 128);
-	}
+  from {
+    color: rgb(53, 57, 63);
+  }
+  to {
+    color: rgba(107, 114, 128);
+  }
 }
 
 @keyframes navHoverColor {
-	from {
-		color: rgba(107, 114, 128);
-	}
-	to {
-		color: rgb(53, 57, 63);
-	}
+  from {
+    color: rgba(107, 114, 128);
+  }
+  to {
+    color: rgb(53, 57, 63);
+  }
 }
 
 header nav .navMenu > a:hover {
-	animation: navHoverColor .15s ease-in forwards;
+  animation: navHoverColor 0.15s ease-in forwards;
 }
 
 header nav .navMenu > a:not(:hover) {
-	animation: navDefaultColor .15s ease-in;
+  animation: navDefaultColor 0.15s ease-in;
 }
 
 header nav .navUser {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
 }
 
 button {
-	background: transparent;
-	border-color: transparent;
-	cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
 }
 
 .profileBtn {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 2.8em;
-	height: 2.8em;
-	border-radius: 1.4em;
-	overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.8em;
+  height: 2.8em;
+  border-radius: 1.4em;
+  overflow: hidden;
 }
 
 .profileBtn > * {
-	width: inherit;
-	height: inherit;
+  width: inherit;
+  height: inherit;
 }
 
 .notifBtn {
-	box-sizing: border-box;
-	width: 3em;
-	height: 3em;
-	color: inherit;
+  box-sizing: border-box;
+  width: 3em;
+  height: 3em;
+  color: inherit;
 }
 
 .indexContent {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .indexContent .indexBanner,
 .indexContent .indexCourses {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
 }
 
 .indexContent .indexBanner {
-	gap: 1.5em;
+  gap: 1.5em;
 }
 
 .indexBanner .indexBannerTitle {
-	padding-top: 2em;
-	text-align: center;
-	font-size: 4.5em;
-	font-weight: 600;
-	letter-spacing: -1.6px;
+  padding-top: 2em;
+  text-align: center;
+  font-size: 4.5em;
+  font-weight: 600;
+  letter-spacing: -1.6px;
 }
 
-.indexBanner .indexBannerTitle > h2{
-	color: black;
+.indexBanner .indexBannerTitle > h2 {
+  color: black;
 }
 
-.indexBanner .indexBannerTitle > span{
-	color: rgb(37, 99, 235);
+.indexBanner .indexBannerTitle > span {
+  color: rgb(37, 99, 235);
 }
 
 .indexBanner .indexBannerDescription {
-	text-align: center;
-	font-size: 1.5em;
-	line-height: 1.5em;
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 1.5em;
 }
 
 .indexBanner .indexBannerButton {
-	padding-top: 1.5em;
+  padding-top: 1.5em;
 }
 
-.indexBanner .indexBannerButton button{
-	background-color: rgb(37, 99, 235);
-	color: white;
-	font-family: inherit;
-	font-size: 1.25em;
-	line-height: 1.5em;
-	width: 250px;
-	height: 3em;
-	border-radius: 5px;
+.indexBanner .indexBannerButton button {
+  background-color: rgb(37, 99, 235);
+  color: white;
+  font-family: inherit;
+  font-size: 1.25em;
+  line-height: 1.5em;
+  width: 250px;
+  height: 3em;
+  border-radius: 5px;
 }
 
 @keyframes btnDefaultColor {
-	from {
-		background-color: rgb(80, 135, 253);
-	}
-	to {
-		background-color: rgb(37, 99, 235);
-	}
+  from {
+    background-color: rgb(80, 135, 253);
+  }
+  to {
+    background-color: rgb(37, 99, 235);
+  }
 }
 
 @keyframes btnHoverColor {
-	from {
-		background-color: rgb(37, 99, 235);
-	}
-	to {
-		background-color: rgb(80, 135, 253);
-	}
+  from {
+    background-color: rgb(37, 99, 235);
+  }
+  to {
+    background-color: rgb(80, 135, 253);
+  }
 }
 
-.indexBanner .indexBannerButton button:hover{
-	animation: btnHoverColor .15s ease-in forwards;
+.indexBanner .indexBannerButton button:hover {
+  animation: btnHoverColor 0.15s ease-in forwards;
 }
 
-.indexBanner .indexBannerButton button:not(:hover){
-	animation: btnDefaultColor .15s ease-in;
+.indexBanner .indexBannerButton button:not(:hover) {
+  animation: btnDefaultColor 0.15s ease-in;
 }
 
 .indexContent .indexCourses {
-	margin-top: 8em;
-	display: flex;
-	flex-flow: row wrap;
-	gap: 2.5em;
+  margin-top: 8em;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2.5em;
 }
 
 .indexCourses .indexCourse {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	height: 297px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 297px;
 }
 
 .indexCourses .indexCourse:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .indexCourse .indexCourseBanner {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 378.667px;
-	height: 213px;
-	overflow: hidden;
-	border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 378.667px;
+  height: 213px;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .indexCourse .indexCourseBanner span {
-	position: absolute;
-	top: .75em;
-	left: .75em;
-	text-align: center;
-	width: 6ch;
-	line-height: 1.75em;
-	color: rgba(6, 95, 70);
-	border-radius: 10px;
+  position: absolute;
+  top: 0.75em;
+  left: 0.75em;
+  text-align: center;
+  width: 6ch;
+  line-height: 1.75em;
+  color: rgba(6, 95, 70);
+  border-radius: 10px;
 }
 
 .indexCourse .indexCourseBanner .beginnerClass {
-	background-color: rgba(209, 250, 229);
+  background-color: rgba(209, 250, 229);
 }
 
 .indexCourse .indexCourseBanner .middleClass {
-	background-color: rgba(254, 249, 195);
+  background-color: rgba(254, 249, 195);
 }
 
 .indexCourse .indexCourseBanner .advancedClass {
-	background-color: rgba(219, 234, 254);
+  background-color: rgba(219, 234, 254);
 }
 
 .indexCourse .indexCourseBanner img {
-	width: inherit;
-	height: inherit;
+  width: inherit;
+  height: inherit;
 }
 
 .indexCourse .indexCourseTitle {
-	position: absolute;
-	bottom: 3em;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 350px;
-	height: 7em;
-	line-height: 2.5em;
-	background: white;
-	color: black;
-	border-radius: 10px;
+  position: absolute;
+  bottom: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 7em;
+  line-height: 2.5em;
+  background: white;
+  color: black;
+  border-radius: 10px;
 }
 
 .indexCourseBanner,
 .indexCourseTitle {
-	box-shadow: 0 10px 10px rgb(80, 80, 80, .15);
+  box-shadow: 0 10px 10px rgb(80, 80, 80, 0.15);
 }
 
 .indexCourse .indexCourseTitle h3 {
-	font-size: 1.45em;
+  font-size: 1.45em;
 }
 
 .indexCourse .indexCourseTitle h4 {
-	font-size: 1.15em;
+  font-size: 1.15em;
 }
 
 .indexCourse:hover .indexCourseBanner {
-	transform: translateY(-4px);
-	transition: transform .30s;
+  transform: translateY(-4px);
+  transition: transform 0.3s;
 }
 
 .indexCourse:not(:hover) .indexCourseBanner {
-	transform: translateY(0px);
-	transition: transform .30s;
+  transform: translateY(0px);
+  transition: transform 0.3s;
 }
 
 .indexCourse:hover .indexCourseBanner img {
-	width: 416.533px;
-	height: 234.3px;
-	transition: width .25s, height .25s;
+  width: 416.533px;
+  height: 234.3px;
+  transition: width 0.25s, height 0.25s;
 }
 
 .indexCourse:not(:hover) .indexCourseBanner img {
-	width: inherit;
-	height: inherit;
-	transition: width .25s, height .25s;
+  width: inherit;
+  height: inherit;
+  transition: width 0.25s, height 0.25s;
 }
 
 .indexCourse:hover .indexCourseTitle {
-	transform: translateY(-8px);
-	transition: transform .25s;
+  transform: translateY(-8px);
+  transition: transform 0.25s;
 }
 
 .indexCourse:not(:hover) .indexCourseTitle {
-	transform: translateY(0px);
-	transition: transform .25s;
+  transform: translateY(0px);
+  transition: transform 0.25s;
 }
 
 .indexContent .indexSeeAllCourses {
-	margin-top: 2em;
+  margin-top: 2em;
 }
 
 .indexContent .indexSeeAllCourses a {
-	font-size: 1.25em;
-	text-decoration: none;
-	color: rgb(37, 99, 235);
+  font-size: 1.25em;
+  text-decoration: none;
+  color: rgb(37, 99, 235);
 }
 
 .indexContent .indexSeeAllCourses a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .indexContent .indexContentChallenges {
-	margin-top: 12em;
-	width: 100%;
+  margin-top: 12em;
+  width: 100%;
 }
 
 .indexContentChallenges .indexDiagonalBackground {
-	background-color: rgb(249, 250, 251);
-	transform: skewY(-5deg);
-	width: 100%;
-	padding: 2em 0;
+  background-color: rgb(249, 250, 251);
+  transform: skewY(-5deg);
+  width: 100%;
+  padding: 2em 0;
 }
 
 .indexContentChallenges .indexDiagonalBackground > * {
-	transform: skewY(5deg);
+  transform: skewY(5deg);
 }
 
 .indexDiagonalBackground .indexChallenges {
-	display: flex;
-	flex-flow: column wrap;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .indexChallenges .indexChallengesTitle {
-	text-align: center;
-	width: 90%;
+  text-align: center;
+  width: 90%;
 }
 
 .indexChallenges .indexChallengesTitle h2 {
-	font-family: 'Noto Sans KR', sans-serif;
-	font-size: 2.5em;
-	line-height: 2.25em;
-	font-weight: 600;
-	color: black;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 2.5em;
+  line-height: 2.25em;
+  font-weight: 600;
+  color: black;
 }
 
 .indexChallenges .indexChallengesTitle span {
-	font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 .indexChallenges .indexChallengesCards {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 90%;
-	margin-top: 5em;
-	gap: 2.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-top: 5em;
+  gap: 2.5em;
 }
 
 .indexChallengesCards .indexChallengesCard {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 378px;
-	background-color: white;
-	gap: 1em;
-	box-shadow: 0 10px 10px rgba(80, 80, 80, .15);
-	border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 378px;
+  background-color: white;
+  gap: 1em;
+  box-shadow: 0 10px 10px rgba(80, 80, 80, 0.15);
+  border-radius: 10px;
 }
 
 .indexChallengesCard .indexChallengesCardTitle h3 {
-	font-size: 2.25em;
-	color: black;
-	line-height: 2.25em;
-	margin-top: .5em;
+  font-size: 2.25em;
+  color: black;
+  line-height: 2.25em;
+  margin-top: 0.5em;
 }
 
 .indexChallengesCard span {
-	font-size: 1.15em;
-	color: rgba(75, 85, 99);
+  font-size: 1.15em;
+  color: rgba(75, 85, 99);
 }
 
 .indexChallengesCard .indexChallengesCardInfo {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: center;
-	width: 90%;
-	gap: .75em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90%;
+  gap: 0.75em;
 }
 
 .indexChallengesCardInfo .indexChallengesCardIcon {
-	display: flex;
-	width: 32px;
-	height: 32px;
-	justify-content: center;
-	align-items: center;
-	background-color: rgba(107, 114, 128, 0.25);
-	border-radius: 8px;
+  display: flex;
+  width: 32px;
+  height: 32px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(107, 114, 128, 0.25);
+  border-radius: 8px;
 }
 
 .indexChallengesCardIcon svg {
-	width: 20px;
-	height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 .indexChallengesCardInfo .indexChallengesCardUnlockBadge {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 48px;
-	width: 48px;
-	border-radius: 24px;
-	box-shadow: 0 3px 5px rgba(80, 80, 80, 0.30);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 48px;
+  border-radius: 24px;
+  box-shadow: 0 3px 5px rgba(80, 80, 80, 0.3);
 }
 
 .indexChallengesCardUnlockBadge img {
-	height: 40px;
-	width: 40px;
+  height: 40px;
+  width: 40px;
 }
 
 .indexChallengesCards .indexChallengesCardCountdown {
-	margin-top: 1.5em;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: .75em;
-	color: black;
+  margin-top: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75em;
+  color: black;
 }
 
-.indexChallengesCardCountdown span{
-	font-size: 1em;
+.indexChallengesCardCountdown span {
+  font-size: 1em;
 }
 
-.indexChallengesCardCountdown h3{
-	font-size: 1.75em;
-	font-weight: 300;
+.indexChallengesCardCountdown h3 {
+  font-size: 1.75em;
+  font-weight: 300;
 }
 
 .indexChallengesCards .indexChallengesCardSeeMore {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 3.5em;
-	width: 90%;
-	margin: 2em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.5em;
+  width: 90%;
+  margin: 2em 0;
 }
 
-.indexChallengesCardSeeMore button{
-	box-sizing: border-box;
-	width: 100%;
-	height: inherit;
-	color: white;
-	font-size: 1.15em;
-	background-color: rgb(40, 44, 52);
-	border-radius: 5px;
+.indexChallengesCardSeeMore button {
+  box-sizing: border-box;
+  width: 100%;
+  height: inherit;
+  color: white;
+  font-size: 1.15em;
+  border-radius: 5px;
 }
 
-.indexChallengesCardSeeMore button:hover{
-	background-color: rgb(calc(initial + 40), calc(initial + 40), calc(initial + 40));
+.indexChallengesCardSeeMore .react {
+  --red: 40;
+  --green: 44;
+  --blue: 52;
+  background-color: rgb(var(--red), var(--green), var(--blue));
+}
+
+.indexChallengesCardSeeMore .htmlcss {
+	--red: 57;
+	--green: 33;
+	--blue: 29;
+	background-color: rgb(var(--red), var(--green), var(--blue));
+}
+
+.indexChallengesCardSeeMore button:hover {
+  background-color: rgb(
+    calc(var(--red) + 40),
+    calc(var(--green) + 40),
+    calc(var(--blue) + 40)
+  );
 }
