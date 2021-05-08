@@ -446,6 +446,7 @@ button {
 
 .indexChallenges .indexSeeAllChallenges {
   margin-top: 5em;
+  margin-bottom: 3em;
 }
 
 .indexContent .indexSeeAllCourses a,
@@ -469,7 +470,7 @@ button {
   background-color: rgb(249, 250, 251);
   transform: skewY(-5deg);
   width: 100%;
-  padding: 5em 0;
+  padding: 3em 0;
 }
 
 .indexContentChallenges .indexDiagonalBackground > * {
