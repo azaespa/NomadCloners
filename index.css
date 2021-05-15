@@ -652,8 +652,33 @@ button {
 
 .footer {
   display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
-.footer > .footerNavigations {
+.footer .footerContent {
   display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 90%;
+}
+
+.footerContent > *,
+.footerNavigations > * {
+  flex: 1 1 100%;
+}
+
+.footer .footerNavigations {
+  display: flex;
+  justify-content: center;
+}
+
+.footerContent > .footerNavigations {
+  display: flex;
+}
+
+.footerContent .nomadBanner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
