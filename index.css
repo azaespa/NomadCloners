@@ -650,3 +650,10 @@ button {
   transition: background-color .15s ease-in;
 }
 
+.footer {
+  display: flex;
+}
+
+.footer > .footerNavigations {
+  display: flex;
+}
